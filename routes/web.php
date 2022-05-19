@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/request', [
+//     'as'=>'MyController',
+//     'uses'=>'MyController@simpleRequest'
+// ]);
+
+Route::get('/advancedRequest', [
+    'as'=>'MyController',
+    'uses'=>'MyController@advancedRequest'
+]);
